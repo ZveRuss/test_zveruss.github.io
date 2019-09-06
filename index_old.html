@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Task</title>
+    <script src="action.js"></script>
+</head>
+
+<body>
+    <div class="Operation">
+        <input id="InA" type="radio" name="ChangeMatrix" onclick="addRow()">Matrix A
+        <input id="InB" type="radio" name="ChangeMatrix" onclick="addRow()">Matrix B
+        <br>
+    </div>
+    <div>
+        <div>
+           <table>
+              <tbody id="MatrixA">
+               <tr id="ARow1">
+                   <td><input id="a1,1" type="text" onchange="setElementOfMatrix(this.value,'a','1',',','1')"></td>
+                   <td><input id="a1,2" type="text" onchange="setElementOfMatrix(this.value,'a','1',',','2')"></td>
+                   <td><input id="a1,3" type="text" onchange="setElementOfMatrix(this.value,'a','1',',','3')"></td>
+                </tr>
+                <tr id="ARow2">
+                    <td><input id="a2,1" type="text" onchange="setElementOfMatrix(this.value,'a','2',',','1')"></td>
+                    <td><input id="a2,2" type="text" onchange="setElementOfMatrix(this.value,'a','2',',','2')"></td>
+                    <td><input id="a2,3" type="text" onchange="setElementOfMatrix(this.value,'a','2',',','3')"></td>
+                </tr>
+                <tr id="ARow3">
+                    <td><input id="a3,1" type="text" onchange="setElementOfMatrix(this.value,'a','3',',','1')"></td>
+                    <td><input id="a3,2" type="text" onchange="setElementOfMatrix(this.value,'a','3',',','2')"></td>
+                    <td><input id="a3,3" type="text" onchange="setElementOfMatrix(this.value,'a','3',',','3')"></td>
+               </tr>
+              </tbody>
+            </table>
+        </div>
+        <div>
+           <table id="MatrixB">
+                <tr id="BRow1">
+                    <td><input id="b1,1" type="text" onchange="setElementOfMatrix(this.value,'b','1',',','1')"></td>
+                    <td><input id="b1,2" type="text" onchange="setElementOfMatrix(this.value,'b','1',',','2')"></td>
+                    <td><input id="b1,3" type="text" onchange="setElementOfMatrix(this.value,'b','1',',','3')"></td>
+               </tr>
+                <tr id="BRow2">
+                    <td><input id="b2,1" type="text" onchange="setElementOfMatrix(this.value,'b','2',',','1')"></td>
+                    <td><input id="b2,2" type="text" onchange="setElementOfMatrix(this.value,'b','2',',','2')"></td>
+                    <td><input id="b2,3" type="text" onchange="setElementOfMatrix(this.value,'b','2',',','3')"></td>
+               </tr>
+                <tr id="BRow3">    
+                    <td><input id="b3,1" type="text" onchange="setElementOfMatrix(this.value,'b','3',',','1')"></td>
+                    <td><input id="b3,2" type="text" onchange="setElementOfMatrix(this.value,'b','3',',','2')"></td>
+                    <td><input id="b3,3" type="text" onchange="setElementOfMatrix(this.value,'b','3',',','3')"></td>
+               </tr>
+            </table>
+        </div>
+
+        <div>
+            <div id="MatrixC">
+                <table>
+                    <tr>
+                        <td><input id="c1,1" type="text"></td>
+                        <td><input id="c1,2" type="text"></td>
+                        <td><input id="c1,3" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="c2,1" type="text"></td>
+                        <td><input id="c2,2" type="text"></td>
+                        <td><input id="c2,3" type="text"></td>
+                    </tr>
+                        <td><input id="c3,1" type="text"></td>
+                        <td><input id="c3,2" type="text"></td>
+                        <td><input id="c3,3" type="text"></td>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

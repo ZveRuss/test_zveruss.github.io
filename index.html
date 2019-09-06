@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+</head>
+
+<body onload="displayAllNewMatrix()">
+    <!--[if IE 9]>
+      setPlaceHolders()
+    <![endif]-->
+    <div class="layout">
+        <div id="operations">
+            <div id="controls">
+                <div id="multiply">
+                    <input id="calculate" type="button" value="Умножить матрицы" onclick="doCalculation()">
+                </div>
+                <div id="clearMatrix">
+                    <input class="buttons" type="button" value="&#57362;Очистить матрицы" onclick="clearMatrix()">
+                </div>
+                <div id="swapMatrix">
+                    <input class="buttons" type="button" value="Поменять матрицы местами" onclick="swapMatrix()">
+                </div>
+                <input id="inA" type="radio" name="selectionMatrix" checked>Матрица A
+                <input id="inB" type="radio" name="selectionMatrix">Матрица B
+                <table>
+                    <tr>
+                        <td>
+                            <input class="buttons" type="button" value="Добавить" onclick="addRow()" ;>
+                        </td>
+                        <td>
+                            <input class="buttons" type="button" value="Удалить" onclick="deleteRow()" ;>
+                        </td>
+                        <td>строку</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="buttons" type="button" value="Добавить" onclick="addColumn()">
+                        </td>
+                        <td>
+                            <input class="buttons" type="button" value="Удалить" onclick="deleteColumn()">
+                        </td>
+                        <td>столбец</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ErrorMessage">
+                <p id="TextOfError">Такие матрицы нельзя перемножить,
+                    <br> так как количество столбцов матрицы A
+                    <br> не равно количеству строк матрицы B</p>
+            </div>
+        </div>
+        <div id="AllMatrix">
+        </div>
+    </div>
+    <script src="action_logic.js"></script>
+</body>
+
+</html>

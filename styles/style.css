@@ -1,0 +1,144 @@
+        @font-face {
+            font-family: 'Kontur-Iconic-eco';
+            src: url('/fonts/Kontur-Iconic-eco.eot?#iefix') format('embedded-opentype'), url('/fonts/Kontur-Iconic-eco.woff') format('woff'), url('/fonts/Kontur-Iconic-eco.ttf') format('truetype'), url('/fonts/Kontur-Iconic-eco.svg#Kontur-Iconic-eco') format('svg');
+        }
+        
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%
+        }
+        
+        .layout {
+            position: relative;
+            width: 1200px;
+            height: 100%;
+        }
+        
+        #AllMatrix,
+        #operations,
+        {
+            position: absolute;
+        }
+        
+        #operations {
+            background-color: darkgray;
+            width: 35%%;
+            height: 100%;
+            float: left;
+        }
+        
+        #Allmatrix {
+            background: #C6DD7D;
+            right: 980px;
+        }
+        
+        #ErrorMessage {
+            margin: 0 100px 0 100px;
+        }
+        
+        #TextOfError {
+            color: red;
+            visibility: hidden;
+            padding: 0 1px 0 1px;
+        }
+        
+        .matrix {
+            display: inline-block;
+            border: solid #000;
+            border-width: 0 2px;
+            border-collapse: collapse;
+            vertical-align: middle;
+            *display: inline;
+            *margin-right: .25em;
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+        
+        #aMatrix {
+            margin-right: 350px;
+            clear: left;
+        }
+        
+        .matrix tr:before,
+        .matrix tr:after {
+            display: table-cell;
+            content: '\a0';
+            width: .25em;
+        }
+        
+        .matrix tr:first-child:before,
+        .matrix tr:first-child:after {
+            border-top: 2px solid #000;
+        }
+        
+        .matrix tr:last-child:before,
+        .matrix tr:last-child:after {
+            border-bottom: 2px solid #000;
+        }
+        
+        .matrix td {
+            width: 1px;
+            padding: 5px 5px;
+            text-align: center;
+            border: 0;
+        }
+        
+        .matrix td input {
+            width: 25px;
+            height: 25px;
+        }
+        
+        .matrix+.matrix {
+            margin-left: 25px;
+        }
+        
+        .buttons {
+            display: block;
+            width: 160px;
+            height: 40px;
+            background: url("/images/button.png");
+            border: none;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        
+        .buttons:hover {
+            background-position: -690px 0;
+        }
+        
+        .buttons:active {
+            background-position: -920px 0;
+        }
+        
+        #inA,
+        #InB {
+            background: url("/images/radiobuttons.png");
+            border: none;
+        }
+        
+        #inA:hover,
+        #InB:hover {
+            background-position: -69px 0;
+        }
+        
+        #inA:active,
+        #InB:active {
+            background-position: -92px 0;
+        }
+        
+        #inA:focus,
+        #InB:focus {
+            background-position: -45px 0;
+        }
+        
+        input[type="text"]::-webkit-input-placeholder {
+            color: lightgray;
+        }
+        
+        .placeholdr {
+            color: gray;
+        }
